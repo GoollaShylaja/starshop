@@ -1,3 +1,10 @@
+{% extends 'base.html.twig'%}
+
+{# {% block title %} Welcome to starshop {% endblock %}  // to override parent behaviour #}
+{% block title %} {{ parent() }} starshop {% endblock %}
+
+{% block body %}
+
 <h1>Hi, Welcome to Starshop</h1>
 
 <div>
@@ -33,3 +40,4 @@
         </tr>
     </table>
 </div>
+{% endblock %}

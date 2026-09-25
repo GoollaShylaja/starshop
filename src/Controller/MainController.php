@@ -1,8 +1,6 @@
 <?php
 
-// package in java
-
-namespace App\Controller;
+namespace App\Controller; // package in java
 
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
