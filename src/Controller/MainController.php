@@ -16,22 +16,22 @@ class MainController extends AbstractController
     //     return new Response('<strong>Hi</strong>:, Welcome to Starshop');
     // }
 
-    // GetMapping("/")
+    // @GetMapping("/")
     #[Route('/')]
     public function homePage(): Response
     {
-        //follow the file paht and name like 
-        //className/methodName.html.twig
-        //ex
-        //main->MainController
-        //homePage->methodName.html.twig
-
         $myShip = [
             'name' => 'USS LeafyCruiser (NCC-0001)',
             'class' => 'Garden',
             'captain' => 'Jean-Luc Pickles',
             'status' => 'under construction',
         ];
+
+        //follow the file path and name like 
+        //className/methodName.html.twig in templates folder
+        //ex
+        //main->MainController
+        //homePage->methodName.html.twig
 
         $starshipCount=457;
         return $this->render('main/homepage.html.twig',[
